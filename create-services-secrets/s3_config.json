@@ -1,0 +1,32 @@
+{
+  "identities": [
+    {
+      "name": "${ARGO_WORKFLOWS_USERNAME}",
+      "credentials": [
+        {
+          "accessKey": "${ARGO_WORKFLOWS_USERNAME}",
+          "secretKey": "${ARGO_WORKFLOWS_PASSWORD}"
+        }
+      ],
+      "actions": [
+        "Read:argo-workflows",
+        "List:argo-workflows",
+        "Write:argo-workflows"
+      ]
+    },
+    {
+      "name": "${COSMOTECH_API_USERNAME}",
+      "credentials": [
+        {
+          "accessKey": "${COSMOTECH_API_USERNAME}",
+          "secretKey": "${COSMOTECH_API_PASSWORD}"
+        }
+      ],
+      "actions": [
+        "Read:cosmotech-api",
+        "List:cosmotech-api",
+        "Write:cosmotech-api"
+      ]
+    }
+  ]
+}
