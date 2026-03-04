@@ -16,6 +16,6 @@ done
 
 
 # Deploy
-./_run-init.sh  devops-test-tenant-azure-0001
+./_run-init.sh  devops-test-azure-tenant-0001
 ./_run-plan.sh  terraform.tfvars
 # ./_run-apply.sh

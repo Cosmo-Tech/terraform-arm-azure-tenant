@@ -69,11 +69,6 @@ variable "dns_zone_name" {
   type        = string
 }
 
-variable "dns_zone_rg" {
-  description = "The DNS zone resource group"
-  type        = string
-}
-
 variable "virtual_network_address_prefix" {
   description = "The Virtual Network IP range. Minimum /26 NetMaskLength"
   type        = string

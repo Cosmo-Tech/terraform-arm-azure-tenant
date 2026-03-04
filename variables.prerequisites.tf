@@ -17,9 +17,6 @@ variable "audience" {
 variable "location" {
   type = string
 }
-variable "dns_zone_rg" {
-  type = string
-}
 variable "user_app_role" {
   type = list(object({
     description  = string

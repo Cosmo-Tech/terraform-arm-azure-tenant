@@ -42,6 +42,10 @@ output "out_api_cosmo_version_path" {
   value = var.api_version_path
 }
 
+output "out_kubernetes_tenant_namespace" {
+  value = var.kubernetes_tenant_namespace
+}
+
 output "out_tenant_resource_group" {
   value = var.tenant_resource_group
 }

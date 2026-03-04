@@ -157,7 +157,6 @@ api_version_path          = "v3"
 audience                  = "AzureADMultipleOrgs"
 platform_name             = ""
 platform_url              = ""
-dns_zone_rg               = "phoenix"
 user_app_role = [{
   description  = "Workspace Writer",
   display_name = "Workspace Writer",

@@ -1,3 +1,5 @@
-terraform -chdir=$PWD/$1 output > $PWD/out_core_infra.txt
-sed -i 's/ = /=/' $PWD/out_core_infra.txt
-sed -i 's/out_/export TF_VAR_/' $PWD/out_core_infra.txt
+terraform -chdir=$PWD/$1 output -json | jq -r '
+to_entries[]
+| select(.value.sensitive != true)
+| "export TF_VAR_\(.key)=\"\(.value.value // "")\""
+' > $PWD/out_core_infra.txt

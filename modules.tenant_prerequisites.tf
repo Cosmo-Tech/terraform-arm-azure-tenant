@@ -18,7 +18,6 @@ module "azure-tenant-prerequisites" {
   dns_zone_name                  = var.network_dns_zone_name
   virtual_network_address_prefix = var.network_tenant_address_prefix
   subnet_name                    = var.network_subnet_name
-  dns_zone_rg                    = var.dns_zone_rg
   customer_name                  = var.project_customer_name
   user_app_role                  = var.user_app_role
   image_path                     = var.image_path
