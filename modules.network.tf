@@ -20,5 +20,8 @@ module "create-network-resources" {
   blob_privatedns_zonename                     = var.blob_private_dns_zonename
   eventhub_privatedns_zonename                 = var.eventhub_private_dns_zonename
 
-  depends_on = [data.azurerm_virtual_network.current]
+  depends_on = [
+    data.azurerm_virtual_network.current,
+    azurerm_resource_group.tenant_rg,
+  ]
 }
