@@ -4,4 +4,4 @@ to_entries[]
 | .key as $k
 | ($k | sub("^out_"; "")) as $k2
 | "export TF_VAR_\($k2)=\"\(.value.value // "")\""
-' > $PWD/out_core_infra.txt
+' > $PWD/out_azure_core.txt
