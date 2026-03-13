@@ -53,7 +53,6 @@ queue_private_dns_zonename           = "privatelink.queue.core.windows.net"
 table_private_dns_zonename           = "privatelink.table.core.windows.net"
 eventhub_private_dns_zonename        = "privatelink.servicebus.windows.net"
 adt_private_dns_zonename             = "privatelink.digitaltwins.azure.net"
-network_dns_zone_name                = "api.cosmotech.com"
 
 # storage
 storage_account_deploy                  = true
